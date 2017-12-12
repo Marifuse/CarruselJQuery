@@ -1,0 +1,74 @@
+/*Arreglos principales*/
+* {
+	margin: 0 auto;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Indie Flower', cursive;
+	background-image: url(../images/universo.jpg);
+	background-size: cover;
+	background-position: center;
+}
+ul,ol {
+	list-style: none;
+}
+
+/*Carrusel en sí*/
+.title {
+	font-size: 5em; 
+	color: #0404B4;
+  text-align: -webkit-center;
+  text-decoration: underline;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.cover-page {
+	width: 100%;
+	position: relative;
+}
+.slide li, ul {
+	width: 100%;
+	text-align: center;
+}
+.slide li {
+	overflow: hidden;
+}
+.slide li img {
+	width: 50%;
+	border: 1.5em solid #088A68;
+}
+.page {
+	position: absolute;
+	top: 102%;
+	width: 98%;
+	padding: 0.5em;
+	display: flex;
+	justify-content: center;
+}
+.page li{
+	font-size: 1em;
+	margin: 0.5em 0.5em;
+	color: #858585;
+	cursor: pointer;
+}
+.fa-chevron-left, .fa-chevron-right{
+	position: absolute;
+	top: 0;
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+	color: #0404B4;
+	font-size: 4em;
+	margin-top: 1.2em;
+	cursor: pointer;
+	z-index: 2;
+}
+.fa-chevron-left{
+	left: 8em;
+}
+.fa-chevron-right{
+	right: 8em;
+}
